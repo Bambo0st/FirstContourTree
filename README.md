@@ -18,7 +18,7 @@ z
     Fig3 shows the First Contour Tree
 
 For example take input as 7
-Fig1 :
+Fig1 :asdadsasd
 
 
 
@@ -28,4 +28,4 @@ Fig2:
 
 Fig3:
 
-Thank you
+

@@ -22,7 +22,7 @@ For example take input as 7
 Fig1 :
 
 
-    ![image](https://github.com/Bambo0st/FirstContourTree/assets/99262296/4498a121-4ed7-4515-9dc2-30ffdcc38dbc)
+![image](https://github.com/Bambo0st/FirstContourTree/assets/99262296/223cf22e-f66c-4216-884c-9b9a55c2ce89)
     
 
 

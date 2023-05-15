@@ -5,15 +5,15 @@ import networkx as nx
 print("Enter the resolution of tree ")
 k = int(input())
 
-vertices = [1, 2, 3, 4]
+vertices = [1, 2, 3, 4]         #labels of corners
 d = (vertices[3] - vertices[0]) / k
 
 labels = []
 for i in range(k + 1):
     labels.append(1 + i * d)
-print(labels)
+print("The labels are ",labels)
 
-corners = {1: [1, 5], 2: [5, 1], 3: [1, 1], 4: [5, 5]}
+corners = {1: [1, 5], 2: [5, 1], 3: [1, 1], 4: [5, 5]}  #position of square
 
 
 # Define the coordinates of the square vertices
@@ -73,7 +73,6 @@ for i in labels:
             1 + ((i - 1) / (vertices[1] - vertices[0]) * 4 * pow(2, 0.5)) / pow(2, 0.5),
             5 - ((i - 1) / (vertices[1] - vertices[0]) * 4 * pow(2, 0.5)) / pow(2, 0.5),
         ]
-        print(" how is it ", edge12[i])
         edges12.append(i)
 print("The edge12 is ", edge12)
 print("The edges12 is", edges12)
@@ -93,12 +92,12 @@ print("e14 size is ", e14)
 
 count = k
 
+#top right triangle
 rightTriangleVertices = []
 rightTriangleVertices.append(edge14[vertices[3]])  # This is label 4
 rightTriangleVertices.append(edge24[edges24[e24 - 2]])
 rightTriangleVertices.append(edge14[edges14[e14 - 2]])
 
-print(rightTriangleVertices)
 triangle_right = Polygon(rightTriangleVertices)
 
 triangle1_patch = plt.Polygon(
@@ -116,6 +115,7 @@ ax2.text(
 
 count = count - 1
 
+#for trapeziums in btw tringle and quadrilateral
 for i in range(e24 - 2):
     trapezium = []
     trapezium.append(edge24[edges24[e24 - i - 3]])  # 2.5
@@ -146,7 +146,6 @@ if k != 6:
     poly.append(edge14[edges14[e12]])  # label 1.
     poly.append(edge12[edges14[e12]])  # labl 1.
     polyPolygon = Polygon(poly)
-    print(poly)
     trap_patch = plt.Polygon(poly, facecolor="gray", edgecolor="black")
 
     ax2.add_patch(trap_patch)
@@ -230,7 +229,6 @@ diagTriangle.append(corners[vertices[0]])  # This is label 1
 diagTriangle.append(edge12[edges12[0]])
 diagTriangle.append(edge14[edges14[1]])
 
-print(diagTriangle)
 DiagPoly = Polygon(diagTriangle)
 
 triangle21_patch = plt.Polygon(diagTriangle, facecolor="gray", edgecolor="black")
@@ -246,7 +244,9 @@ ax2.text(
 
 # #
 # #
-# # Left side
+# #
+# 
+#  Left side of sqaure
 
 count = 2
 
@@ -255,7 +255,6 @@ diagTriangle.append(corners[vertices[0]])  # This is label 1
 diagTriangle.append(edge12[edges12[0]])
 diagTriangle.append(edge13[edges13[1]])
 
-print(diagTriangle)
 DiagPoly = Polygon(diagTriangle)
 
 triangle21_patch = plt.Polygon(diagTriangle, facecolor="gray", edgecolor="black")
@@ -300,7 +299,6 @@ if k != 6:
     poly.append(edge13[edges13[e12]])  # label 1.
     poly.append(edge12[edges13[e12]])  # labl 1.
     polyPolygon = Polygon(poly)
-    print(poly)
     trap_patch = plt.Polygon(poly, facecolor="gray", edgecolor="black")
 
     ax2.add_patch(trap_patch)
@@ -312,7 +310,6 @@ if k != 6:
         va="center",
     )
     count += 1
-    print("The count here is ", count)
     count = count + e23 - 2
     last_count = count
 
@@ -390,7 +387,7 @@ triangle_left = Polygon(leftTriangleVertices)
 triangle11_patch = plt.Polygon(
     leftTriangleVertices, facecolor="gray", edgecolor="black"
 )
-print(last_count)
+
 ax2.add_patch(triangle11_patch)
 ax2.text(
     triangle_left.centroid.x,
@@ -412,8 +409,9 @@ ax2.set_ylabel("y")
 ax2.set_title("OUTPUT Graph")
 
 
-# For 2nd graph
 
+# For 2nd graph
+# This is for plotting Dual Graph
 fig1, ax1 = plt.subplots()
 
 G = nx.Graph()
@@ -433,8 +431,13 @@ for i in range(k + 1, k + 1 + e12 + 1 + e23):
     pos[i] = (0.15, i - k)
     label[i] = i - k
 
-
 edges = []
+if(k==6):
+    nodes.append(10)
+    label[10] = 4
+    pos[10] = (0.15,4)
+    edges.append((9,10))
+    
 for i in range(1, k):
     edges.append((i, i + 1))
 
@@ -444,8 +447,6 @@ for i in range(k + 1, k + 1 + e12 + e23):
 for i in range(1, e12 + 2):
     edges.append((i, i + k))
 
-print(edges)
-print(nodes)
 
 G.add_nodes_from(nodes)
 G.add_edges_from(edges)
@@ -461,6 +462,9 @@ nx.draw(
 ax1.set_title("(Dual) First Contour Graph")
 plt.show(block=False)
 
+
+
+#This is for plottion contour tree
 
 fig1, ax1 = plt.subplots()
 G = nx.Graph()
@@ -482,6 +486,12 @@ for i in range(k + 1, k + 1 + e23):
 
 
 edges = []
+
+if(k==6):
+    nodes.append(8)
+    label[8] = 4
+    pos[8] = (0.10,4)
+    edges.append((7,8))
 for i in range(1, k):
     edges.append((i, i + 1))
 
@@ -498,12 +508,8 @@ nx.draw(
     G,
     pos=pos,
     labels=label,
-    # node_size=500,
-    # font_size=16,
+
 )
 ax1.set_title("First Contour Graph")
 plt.show(block=False)
-
-
-# # Keep the windows open until the user closes them
 plt.show()

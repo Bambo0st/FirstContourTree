@@ -10,7 +10,13 @@ This code uses the following libraries : matplotlib , shapely , networkx
 
 4.Input :
     
+    
+    
+    
 ![image](https://github.com/Bambo0st/FirstContourTree/assets/99262296/223cf22e-f66c-4216-884c-9b9a55c2ce89)
+
+
+
 
 5. Now you have to enter resolution of the tree. (Enter a integer value greater than 3.)
     Input :

@@ -1,5 +1,5 @@
 ﻿1. First open the following folder in vscode.
-
+z
 2. Open terminal and run the following command 
     >pip3 install -r req.txt
 
@@ -20,8 +20,7 @@
 For example take input as 7
 Fig1 :
 
-allah is great wsad as
-asdasd
+
 
 Fig2:
 

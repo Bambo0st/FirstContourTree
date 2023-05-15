@@ -28,10 +28,22 @@ Fig1:
 
     ![Fig1](https://github.com/Bambo0st/FirstContourTree/assets/99262296/807b5ee7-d666-4d6c-bd74-5ffc01cb2801)
     
+
+
+
+
+
+
 Fig2:
 
     ![Fig2](https://github.com/Bambo0st/FirstContourTree/assets/99262296/eed56f9b-b7b8-44fc-adb9-9580d534783d)
   
+
+
+
+
+
+
 Fig3:
 
    ![Fig3](https://github.com/Bambo0st/FirstContourTree/assets/99262296/a512890f-c4e6-4601-9aee-a4f2568d3050)

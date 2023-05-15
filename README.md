@@ -26,16 +26,15 @@ This code uses the following libraries : matplotlib , shapely , networkx
 
 Fig1:
 
-    ![image](https://github.com/Bambo0st/FirstContourTree/assets/99262296/96bfd403-ad3d-4b92-aee2-50a6474d599f)
+    ![Fig1](https://github.com/Bambo0st/FirstContourTree/assets/99262296/807b5ee7-d666-4d6c-bd74-5ffc01cb2801)
     
 Fig2:
 
-    ![image](https://github.com/Bambo0st/FirstContourTree/assets/99262296/f3881268-538a-4f2d-af6f-1bb43ed03507)
-
+    ![Fig2](https://github.com/Bambo0st/FirstContourTree/assets/99262296/eed56f9b-b7b8-44fc-adb9-9580d534783d)
   
 Fig3:
 
-    ![image](https://github.com/Bambo0st/FirstContourTree/assets/99262296/04ce43df-03c7-403a-90c7-246c3d1529ed)
-
+   ![Fig3](https://github.com/Bambo0st/FirstContourTree/assets/99262296/a512890f-c4e6-4601-9aee-a4f2568d3050)
+   
 NOTE : If you get module not found error. Use the following
      > pip3 install modulename

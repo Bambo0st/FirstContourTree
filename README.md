@@ -18,14 +18,19 @@ z
     Fig3 shows the First Contour Tree
 
 For example take input as 7
+
 Fig1 :
+
+
+    ![image](https://github.com/Bambo0st/FirstContourTree/assets/99262296/4498a121-4ed7-4515-9dc2-30ffdcc38dbc)
     
+
 
 
 
 Fig2:
 
-
+    
 
 Fig3:
 

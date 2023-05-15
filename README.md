@@ -26,8 +26,8 @@ This code uses the following libraries : matplotlib , shapely , networkx
 
 Fig1:
 
-    ![Fig1](https://github.com/Bambo0st/FirstContourTree/assets/99262296/807b5ee7-d666-4d6c-bd74-5ffc01cb2801)
     
+![Fig1](https://github.com/Bambo0st/FirstContourTree/assets/99262296/c91b630d-5cc5-4d7a-805b-9319d7947aab)
 
 
 

@@ -36,9 +36,9 @@ Fig1:
 
 Fig2:
 
-    ![Fig2](https://github.com/Bambo0st/FirstContourTree/assets/99262296/eed56f9b-b7b8-44fc-adb9-9580d534783d)
   
 
+![Fig2](https://github.com/Bambo0st/FirstContourTree/assets/99262296/19ab249e-28cc-40bc-be27-f0b1c4ce0fcd)
 
 
 
@@ -46,7 +46,8 @@ Fig2:
 
 Fig3:
 
-   ![Fig3](https://github.com/Bambo0st/FirstContourTree/assets/99262296/a512890f-c4e6-4601-9aee-a4f2568d3050)
-   
+![Fig3](https://github.com/Bambo0st/FirstContourTree/assets/99262296/cc8ccb76-c4b9-4571-ae31-5b134d35b5ed)
+
+
 NOTE : If you get module not found error. Use the following
      > pip3 install modulename
